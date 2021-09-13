@@ -28,12 +28,17 @@ header{
 .zippy-name a{
     font-size:33px;
 }
-  header ul li a,.zippy-name a{
+ .zippy-name .navbar-brand {
+padding: 0!important;
+color: white !important;
+    font-weight: bold !important;
+    position: relative;
+}
+  header ul li a{
     color: white !important;
     font-weight: bold !important;
     position: relative;
-    margin:.5rem 1rem ;
-    padding: 0 !important;
+    padding: 10px !important;
 }
 .btn-home li a::before{
     content:'' ;
@@ -159,8 +164,10 @@ transform: translate(-50%,-50%);
     flex-wrap: wrap;
     text-align: center;
     width: 100%;
-    padding: 53px 313px;
     color: #414141;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 26px;
 }
 .text-left{
     width: 50%;
@@ -175,12 +182,18 @@ transform: translate(-50%,-50%);
     text-align: center;
     
 }
+.three-content-box .icon-text-box i{
+    color: white;
+}
 .icon-text-box{
-    padding:30px 63px;
+    padding:30px 0px;
     height: 100%;
 }
 .image-box img{
     height: 40px;
+}
+.image-box figure i{
+    font-size: 3em;
 }
 .image-box{ 
     height: 100px;
@@ -213,9 +226,16 @@ transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-}.box-1{
+}
+.box-1{
     width: 25%;
     background-color: #e4e4e4;
+    
+    /* box-shadow: 0 15px 25px 0 rgb(0 0 0 / 15%); */
+}
+.box-1 .imgtext{
+    box-shadow: 0 15px 25px 0 rgb(0 0 0 / 15%);
+    border: 5px solid #e4e4e4;
 }
 .box-2{
 background-color: rgb(211, 203, 203);
@@ -223,6 +243,7 @@ background-color: rgb(211, 203, 203);
 .text-project{
     text-align: left;
     padding: 30px 33px;
+    border: 5px solid #ffe272;
     
     
 }
@@ -268,7 +289,7 @@ color: #797373;
 .pricing-table-main{
     text-align: center;
     background-color: #fefefe;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .pricing-table-main .text-pricingtable h6{
 padding-top: 15px;
@@ -293,6 +314,7 @@ padding-bottom: 30px;
 .pricing-table-main .col-xl-4:nth-child(1),.pricing-table-main .col-xl-4:nth-child(2){
     border-right: 2px solid #ebebeb;
 }
+
 
 /* .Zippy-team{
     text-align: center;
@@ -320,6 +342,7 @@ padding-right: 40px;
     border-radius:50%;
     height: 180px;
     width: 180px;
+    object-fit: cover;
 }
 .zippy-team-heading{
     text-align: center;
@@ -444,10 +467,10 @@ padding-left: 0!important;
 .blog .blog-heading h2{
 font-size: 45px;
 }
-.blog .col-xl-4{
+/* .blog .col-xl-4{
     padding-left: 68px;
     padding-right: 68px;
-}
+} */
 .blog .text-blog{
     padding-top: 35px;
     padding-bottom: 22px;
@@ -542,11 +565,18 @@ height: 100%;
     align-items: center;
     display: flex;
 }
-.row .col-xl-4{
+.footer-box{
+    padding: 50px 0px 40px;
+}
+.footer-box h5{
+    margin-bottom: 25px;
+    color: #ffe26d;
+}
+.pricing-table-main .row .col-xl-4{
     padding-left: 75px;
     padding-right: 75px;
 }
-.row{
+.pricing-table-main .row{
     padding-top: 54px;
     padding-bottom: 80px;
 }
@@ -574,6 +604,7 @@ padding: 26px;
 }
 .video-title p{
     color: white;
+    padding-top: 15px;
 
 }
 .image-slider .img-slider-box img{
@@ -584,7 +615,7 @@ padding: 26px;
 
 .life-in-zippy{
     background-color: #efefef;
-    padding: 70px 70px;
+    padding: 70px 0px;
 }
 
 .image-slider .img-slider-box img{
@@ -673,17 +704,67 @@ visibility: hidden;
 .footer-icons li i:hover{
     color:#ffe26d; 
 }
-@media(max-width:992) {
+@media(max-width:992px) {
     .text-pricingtable button{
         margin-bottom: 60px;
     } 
-
+    .pricing-table-main .row .col-xl-4{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .image-slider .img-slider-box img {
+        width: 100%;
+        height: 307px;
+        object-fit: cover;
+    }
+     .imagebox-slider img {
+            height: 81px;
+            width: 100%;
+            object-fit: cover;
+        }
     
 }
-@media(max-width:770) {
+@media(max-width:770px) {
     .blog .row .col-md-4 {
-    padding-left: 20px;
-    padding-right: 20 px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pricing-table-main .row .col-xl-4{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Pricing-text-btn{
+    padding-bottom: 25px;
+}
+.pricing-table-main .col-xl-4:nth-child(1), .pricing-table-main .col-xl-4:nth-child(2) {
+    border-right: 0px; 
+}
+.pricing-table-main .row {
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+.imagebox-slider img{
+height: 55px;
+object-fit: cover;
+}
+.image-slider .img-slider-box img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+}
+.signup-form .row{
+    max-width: 100%;
+    --bs-gutter-x:0;
+}
+.signup-form input {
+    padding: 11px 12px;
+}
+.slider-main-wrapper-img{
+    padding: top 0px !important;
+}
+.zippy-team-img .two-headings {
+    padding-top: 7px;
+    padding-bottom: 3px;
 }
  .blog.row .col-md-4 img{
      width: 100%;
@@ -701,4 +782,137 @@ max-width: 539px;
 .projects-page .projects-page-inner .box-1{
         width: 50%;
     }
+  .life-in-zippy  .container-inner{
+      padding-left: 0px!important;
+      padding-right: 0px!important;
+  }
+  .blog .row, .footer-box .row{
+    --bs-gutter-y: 30px;
+  }
+  .blog .text-blog {
+    padding: 20px 10px 20px;
 }
+.footer-box h5 {
+    margin-bottom: 15px;
+}
+}
+@media(max-width:576px) {
+    .zippy-name a{
+        font-size:28px;
+    }
+    
+      header ul li a{
+        padding: 8px !important;
+        font-size: 13px;
+    }
+    .newsletter-heading h2 {
+        font-size: 36px;
+        padding-bottom: 23px;
+    }
+    .blog {
+        padding-top: 21px;
+        padding-bottom: 60px;
+    }
+    .form-right .form-right-headings h2 {
+        padding-bottom: 15px;
+        padding-top: 6px;
+        font-size: 33px;
+    }
+    .form-right-main label {
+        font-size: 12px;
+    }
+    .form-right-main input {
+        margin-bottom: 11px;
+    }
+    .blog .row, .footer-box .row {
+        --bs-gutter-y: 24px;
+    }
+    @media(max-width:375px) {
+        .zippy-name a{
+            font-size:20px;
+        }
+        header ul li a{
+            padding: 6px !important;
+            font-size: 7px;
+        }
+        .projects-page .projects-page-inner .box-1 {
+            width: 100%;
+        }
+        .Pricing-table-heading h2 {
+            padding-top: 27px;
+            font-size: 31px;
+        }
+        .image-slider .img-slider-box img {
+    
+            height: 183px;
+        
+        }
+        .imagebox-slider img {
+            height: 41px;
+        }
+        .life-in-zippy {
+            padding: 29px 0px;
+        }
+        .signup-form {
+            width: 300px;
+        }
+        .newsletter-heading h2 {
+            font-size: 30px;
+            padding-bottom: 19px;
+        }
+        .signup-form input {
+            padding: 6px 9px;
+        }
+        .signup-form .btn.btn-primary {
+            padding: 8px 33px;
+        }
+        .blog .blog-heading h2 {
+            font-size: 34px;
+        }
+        .blog .text-blog h5 {
+            padding-top: 5px;
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+        .blog .blog-img img {
+            height: 190px;
+        }
+        .form-right .form-right-headings h2 {
+            padding-bottom: 9px;
+            padding-top: 0px;
+            font-size: 28px;
+        }
+        .form-right-main label {
+            font-size: 10px;
+        }
+        .form-right-main input {
+            margin-bottom: 7px;
+        }
+        .footer-box {
+            padding: 37px 0px 34px;
+        }
+        .footer-box h5 {
+            margin-bottom: 8px;
+        }
+        .Zippy-team h2 {
+            padding-bottom: 29px;
+            font-size: 29px;
+        }
+        .two-headings h5 {
+            padding-top: 10px;
+        }
+        .footer-box p{
+            font-size: 14px;
+        }
+        .footer-box h5{
+            font-size: 18px;
+
+        }
+        .Zippy-team h5{
+            font-size: 18px;
+        }
+        .Zippy-team p{
+            font-size: 14px;
+        
+        
+    }
