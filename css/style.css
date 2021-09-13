@@ -2,6 +2,12 @@ body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
+.projects-page{
+    overflow: hidden;
+}
+section{
+    overflow-x: hidden;
+}
 figure,p,ul,body,html,h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
@@ -933,4 +939,20 @@ max-width: 539px;
         .video-project {
             padding: 38px 0px;
         }
+        .umbrella-img {
+            width: 30%;
+            
+        }
+        .welcome-page .text-left {
+            width: 70%;
+            font-size: 15px;
+        }
+        .umbrella-img img {
+            height: 62px;
+        }
+        .welcome-page .text-umbrella{
+            padding: 15px;
+        }
+            
+    
     }
